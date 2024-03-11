@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        #img1 {
+            width: 100%;
+            height: 700px;
+            position: relative;
+            position: fixed;
+        }
+
+        #bg {
+            width: 400px;
+            height: 500px;
+            /* background-color: rgb(255, 255, 255); */
+            position: relative;
+            top: 50px;
+            box-shadow: 10px 10px 20px black;
+            left: 50px;
+            border-radius: 20px;
+        }
+
+        #scn {
+            position: relative;
+            width: 80%;
+            border-radius: 20px;
+            left: 35px;
+            top: 20px;
+            height: 50px;
+            border: none;
+            text-align: right;
+            font-size: 20px;
+        }
+
+        #b7 {
+            position: relative;
+            left: -290px;
+            top: -320px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b7:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b8 {
+            position: relative;
+            left: -288px;
+            top: -320px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            font-size: 20px;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            border-radius: 10px;
+        }
+
+        #b8:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b9 {
+            position: relative;
+            left: -284px;
+            top: -320px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b9:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b4 {
+            position: relative;
+            left: -98px;
+            top: -230px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b4:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b5 {
+            position: relative;
+            left: -92px;
+            top: -230px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b5:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b6 {
+            position: relative;
+            left: -90px;
+            top: -230px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b6:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b1 {
+            position: relative;
+            left: 95px;
+            top: -140px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b1:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b2 {
+            position: relative;
+            left: 100px;
+            top: -140px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b2:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b3 {
+            position: relative;
+            left: 103px;
+            top: -140px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            font-size: 20px;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            border-radius: 10px;
+        }
+
+        #b3:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b0 {
+            position: relative;
+            left: -482px;
+            top: -50px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b0:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b00 {
+            position: relative;
+            left: -478px;
+            top: -50px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b00:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #b {
+            position: relative;
+            left: -472px;
+            top: -50px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #b:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #bp {
+            position: relative;
+            left: 305px;
+            top: -200px;
+            width: 60px;
+            height: 150px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        #bp:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #be {
+            position: relative;
+            left: 310px;
+            top: -155px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        #be:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #bm {
+            position: relative;
+            left: 245px;
+            top: -245px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        #bm:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #bmu {
+            position: relative;
+            left: 110px;
+            top: -335px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        #bmu:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #bd {
+            position: relative;
+            left: 115px;
+            top: -335px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        #bd:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #bs {
+            position: relative;
+            left: -18px;
+            top: -430px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        #bs:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+
+        #bc {
+            position: relative;
+            left: -10px;
+            top: -425px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 4px 3px 2px rgb(255, 0, 0);
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        #bc:hover {
+            color: blue;
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <img id="img1" src="5.jpg">
+    <div id="bg">
+        <input type="text" id="scn" placeholder="0"><br>
+    </div>
+    <input type="button" value="1" id="b1" onclick="scn.value+='1' ">
+    <input type="button" value="2" id="b2" onclick="scn.value+='2' ">
+    <input type="button" value="3" id="b3" onclick="scn.value+='3' ">
+    <input type="button" value="4" id="b4" onclick="scn.value+='4' ">
+    <input type="button" value="5" id="b5" onclick="scn.value+='5' ">
+    <input type="button" value="6" id="b6" onclick="scn.value+='6' ">
+    <input type="button" value="7" id="b7" onclick="scn.value+='7' ">
+    <input type="button" value="8" id="b8" onclick="scn.value+='8' ">
+    <input type="button" value="9" id="b9" onclick="scn.value+='9' ">
+    <input type="button" value="0" id="b0" onclick="scn.value+='0' ">
+    <input type="button" value="00" id="b00" onclick="scn.value+='00' ">
+    <input type="button" value="." id="b" onclick="scn.value+='.' ">
+    <div>
+        <input type="button" value="+" id="bp" onclick="scn.value+='+' ">
+        <input type="button" value="=" id="be" onclick="scn.value=eval(scn.value)" class="equal">
+        <input type="button" value="-" id="bm" onclick="scn.value+='-' ">
+        <input type="button" value="*" id="bmu" onclick="scn.value+='*' ">
+        <input type="button" value="/" id="bd" onclick="scn.value+='/' ">
+        <input type="button" value="on/off" id="bs" onclick="scn.value+='on/off' ">
+        <input type="button" value="CE" id="bc" onclick="scn.value=' ' ">
+    </div>
+</body>
+
+</html>
